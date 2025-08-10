@@ -1,5 +1,4 @@
-# FinWise - Intelligent Financial Management Platform
-
+# FinWise - AI POWERED TAX SAVING WEB APP
 A comprehensive financial management application with AI-powered recommendations, tax optimization, government benefits tracking, and personalized financial planning.
 
 ## Features
