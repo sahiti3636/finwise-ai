@@ -10,7 +10,7 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
-echo -e "${BLUE}🚀 FinWise Local Development Setup${NC}"
+echo -e "${BLUE} FinWise Local Development Setup${NC}"
 echo "======================================"
 
 # Function to check if a command exists
@@ -20,33 +20,33 @@ command_exists() {
 
 # Function to check prerequisites
 check_prerequisites() {
-    echo -e "${YELLOW}🔍 Checking prerequisites...${NC}"
+    echo -e "${YELLOW} Checking prerequisites...${NC}"
     
     # Check Python
     if ! command_exists python3; then
-        echo -e "${RED}❌ Python 3 not found. Please install Python 3.8+${NC}"
+        echo -e "${RED} Python 3 not found. Please install Python 3.8+${NC}"
         exit 1
     fi
     
     # Check Node.js
     if ! command_exists node; then
-        echo -e "${RED}❌ Node.js not found. Please install Node.js 16+${NC}"
+        echo -e "${RED} Node.js not found. Please install Node.js 16+${NC}"
         echo "Install with: brew install node"
         exit 1
     fi
     
     # Check npm
     if ! command_exists npm; then
-        echo -e "${RED}❌ npm not found. Please install npm${NC}"
+        echo -e "${RED} npm not found. Please install npm${NC}"
         exit 1
     fi
     
-    echo -e "${GREEN}✅ Prerequisites check completed${NC}"
+    echo -e "${GREEN} Prerequisites check completed${NC}"
 }
 
 # Function to setup backend
 setup_backend() {
-    echo -e "${YELLOW}🐍 Setting up Python backend...${NC}"
+    echo -e "${YELLOW} Setting up Python backend...${NC}"
     
     cd finwise_backend
     
@@ -87,7 +87,7 @@ EMAIL_HOST_USER=your-email@gmail.com
 EMAIL_HOST_PASSWORD=your-app-password
 EMAIL_USE_TLS=True
 EOF
-        echo -e "${YELLOW}⚠️  Please update the .env file with your Gemini API key${NC}"
+        echo -e "${YELLOW}  Please update the .env file with your Gemini API key${NC}"
     fi
     
     # Run migrations
@@ -108,12 +108,12 @@ EOF
     
     cd ..
     
-    echo -e "${GREEN}✅ Backend setup completed${NC}"
+    echo -e "${GREEN} Backend setup completed${NC}"
 }
 
 # Function to setup frontend
 setup_frontend() {
-    echo -e "${YELLOW}⚛️  Setting up React frontend...${NC}"
+    echo -e "${YELLOW}  Setting up React frontend...${NC}"
     
     cd project_frontend/projectv2_v
     
@@ -125,12 +125,12 @@ setup_frontend() {
     
     cd ../..
     
-    echo -e "${GREEN}✅ Frontend setup completed${NC}"
+    echo -e "${GREEN} Frontend setup completed${NC}"
 }
 
 # Function to start backend
 start_backend() {
-    echo -e "${YELLOW}🚀 Starting Django backend...${NC}"
+    echo -e "${YELLOW} Starting Django backend...${NC}"
     
     cd finwise_backend
     
@@ -150,12 +150,12 @@ start_backend() {
     # Wait a moment for backend to start
     sleep 3
     
-    echo -e "${GREEN}✅ Backend started successfully${NC}"
+    echo -e "${GREEN} Backend started successfully${NC}"
 }
 
 # Function to start frontend
 start_frontend() {
-    echo -e "${YELLOW}🎨 Starting React frontend...${NC}"
+    echo -e "${YELLOW} Starting React frontend...${NC}"
     
     cd project_frontend/projectv2_v
     
@@ -172,35 +172,35 @@ start_frontend() {
     # Wait a moment for frontend to start
     sleep 3
     
-    echo -e "${GREEN}✅ Frontend started successfully${NC}"
+    echo -e "${GREEN} Frontend started successfully${NC}"
 }
 
 # Function to show status
 show_status() {
     echo ""
-    echo -e "${BLUE}🌐 FinWise is now running locally!${NC}"
+    echo -e "${BLUE} FinWise is now running locally!${NC}"
     echo "======================================"
-    echo -e "${GREEN}✅ Backend: http://127.0.0.1:8000${NC}"
-    echo -e "${GREEN}✅ Frontend: http://localhost:3000${NC}"
-    echo -e "${GREEN}✅ Admin Panel: http://127.0.0.1:8000/admin${NC}"
+    echo -e "${GREEN} Backend: http://127.0.0.1:8000${NC}"
+    echo -e "${GREEN} Frontend: http://localhost:3000${NC}"
+    echo -e "${GREEN} Admin Panel: http://127.0.0.1:8000/admin${NC}"
     echo ""
-    echo -e "${YELLOW}📝 Important Notes:${NC}"
+    echo -e "${YELLOW} Important Notes:${NC}"
     echo "1. Backend is running on port 8000"
     echo "2. Frontend is running on port 3000"
     echo "3. Make sure to update your Gemini API key in finwise_backend/.env"
     echo "4. Both servers will continue running in the background"
     echo ""
-    echo -e "${BLUE}🛑 To stop the servers:${NC}"
+    echo -e "${BLUE} To stop the servers:${NC}"
     echo "   kill $BACKEND_PID $FRONTEND_PID"
     echo "   or close this terminal window"
     echo ""
-    echo -e "${GREEN}🚀 Happy coding!${NC}"
+    echo -e "${GREEN} Happy coding!${NC}"
 }
 
 # Function to cleanup on exit
 cleanup() {
     echo ""
-    echo -e "${YELLOW}🛑 Stopping servers...${NC}"
+    echo -e "${YELLOW} Stopping servers...${NC}"
     
     if [ ! -z "$BACKEND_PID" ]; then
         kill $BACKEND_PID 2>/dev/null || true
@@ -210,7 +210,7 @@ cleanup() {
         kill $FRONTEND_PID 2>/dev/null || true
     fi
     
-    echo -e "${GREEN}✅ Servers stopped${NC}"
+    echo -e "${GREEN} Servers stopped${NC}"
     exit 0
 }
 
@@ -224,7 +224,7 @@ main() {
     setup_frontend
     
     echo ""
-    echo -e "${YELLOW}🚀 Starting FinWise locally...${NC}"
+    echo -e "${YELLOW} Starting FinWise locally...${NC}"
     echo "This will start both backend and frontend servers"
     echo "Press Ctrl+C to stop both servers"
     echo ""
@@ -234,7 +234,7 @@ main() {
     show_status
     
     # Keep the script running
-    echo -e "${YELLOW}⏳ Servers are running. Press Ctrl+C to stop...${NC}"
+    echo -e "${YELLOW} Servers are running. Press Ctrl+C to stop...${NC}"
     wait
 }
 
