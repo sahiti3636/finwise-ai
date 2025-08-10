@@ -109,4 +109,23 @@ npm run dev
 - Ensure `GEMINI_API_KEY` is set to enable AI features.
 
 
+## Running Locally with `setup_local.sh`
+
+ A helper script to make it easy to set up and run the project locally.
+
+### Steps:
+
+1. **Make the script executable**  
+   ```bash
+   chmod +x setup_local.sh
+   ```
+
+2. **Run the setup script**  
+   This will create a Python virtual environment, install dependencies, apply migrations, and start the server.
+   ```bash
+   ./setup_local.sh
+   ```
+
+3. **Access the website**  
+   Open your browser and go to the local host
 
