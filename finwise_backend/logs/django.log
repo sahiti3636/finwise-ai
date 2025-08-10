@@ -1,0 +1,20 @@
+INFO 2025-08-10 14:16:49,125 autoreload 26673 8424874176 Watching for file changes with StatReloader
+INFO 2025-08-10 14:17:58,926 autoreload 27886 8424874176 Watching for file changes with StatReloader
+INFO 2025-08-10 14:19:13,767 basehttp 27886 6345535488 "HEAD /admin/ HTTP/1.1" 302 0
+INFO 2025-08-10 14:22:39,979 autoreload 27886 8424874176 /Users/sahitipotini/Desktop/finwise_project_completev1/finwise_backend/finwise_backend/settings_production.py changed, reloading.
+INFO 2025-08-10 14:22:40,595 autoreload 28466 8424874176 Watching for file changes with StatReloader
+INFO 2025-08-10 14:22:45,779 autoreload 28466 8424874176 /Users/sahitipotini/Desktop/finwise_project_completev1/finwise_backend/finwise_backend/settings_production.py changed, reloading.
+INFO 2025-08-10 14:22:46,411 autoreload 28476 8424874176 Watching for file changes with StatReloader
+WARNING 2025-08-10 16:43:06,742 log 35766 8424874176 Not Found: /api/
+WARNING 2025-08-10 16:43:10,891 log 35769 8424874176 Not Found: /api/
+WARNING 2025-08-10 16:43:28,226 log 35785 8424874176 Unauthorized: /api/books/
+WARNING 2025-08-10 16:44:59,161 log 35776 8424874176 Not Found: /api/
+WARNING 2025-08-10 16:45:29,848 log 35776 8424874176 Not Found: /api/
+WARNING 2025-08-10 16:47:42,690 log 35767 8424874176 Not Found: /api/
+WARNING 2025-08-10 16:50:38,387 log 35784 8424874176 Not Found: /api/
+WARNING 2025-08-10 16:51:02,076 log 35767 8424874176 Not Found: /api/
+INFO 2025-08-10 17:08:10,354 ai_service 35781 8424874176 Gemini AI service initialized successfully
+WARNING 2025-08-10 17:08:10,361 log 35781 8424874176 Not Found: /api/health/
+WARNING 2025-08-10 17:08:13,904 log 35785 8424874176 Not Found: /
+INFO 2025-08-10 17:08:19,690 ai_service 35787 8424874176 Gemini AI service initialized successfully
+WARNING 2025-08-10 17:08:19,691 log 35787 8424874176 Unauthorized: /api/chatbot/
