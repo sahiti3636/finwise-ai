@@ -22,17 +22,14 @@ A comprehensive financial management application with AI-powered recommendations
 - **SQLite/PostgreSQL**: Database
 - **Google Gemini AI**: Advanced AI-powered financial recommendations
 - **Python-dotenv**: Environment variable management
-- **Gunicorn**: Production WSGI server
+
 
 ### Frontend
 - **React 18**: UI framework
 - **TypeScript**: Type safety
 - **Vite**: Build tool
 - **Tailwind CSS**: Styling
-- **Framer Motion**: Animations
-- **Zustand**: State management
-- **React Router**: Navigation
-- **Lucide React**: Icons
+
 
 ## AI Integration
 
@@ -48,14 +45,6 @@ FinWise features a sophisticated AI-powered financial advisor powered by **Googl
 - **Smart Context Understanding**: Analyzes income, age, dependents, and financial goals
 - **Real-time Recommendations**: Instant, personalized financial advice
 - **Fallback Systems**: Robust error handling with intelligent fallback responses
-- **Multi-language Support**: Handles Indian financial context and terminology
-
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
 
 # FinWise – Local Setup
 
@@ -71,7 +60,7 @@ AI-powered financial management platform with tax optimization, government benef
 
 ---
 
-## 1️⃣ Backend Setup
+## Backend Setup
 ```bash
 cd finwise_backend
 python -m venv venv
@@ -98,7 +87,7 @@ python manage.py runserver
 
 ---
 
-## 2️⃣ Frontend Setup
+## Frontend Setup
 ```bash
 cd project_frontend/projectv2_v
 npm install
@@ -108,7 +97,7 @@ npm run dev
 
 ---
 
-## 3️⃣ Access
+## Access
 - **Frontend** → [http://localhost:5173](http://localhost:5173)
 - **Backend API** → [http://localhost:8000/api](http://localhost:8000/api)
 - **Admin Panel** → [http://localhost:8000/admin](http://localhost:8000/admin)
